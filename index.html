@@ -83,6 +83,44 @@
             text-align: center;
             border-top: 1px solid #ddd;
         }
+
+        .profile-container {
+            display: flex;
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-photo {
+            text-align: center;
+            padding-left: 2rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            header li {
+                padding: 0 10px 0 10px;
+            }
+
+            .profile-container {
+                flex-direction: column;
+            }
+
+            .profile-photo {
+                padding-left: 0;
+                margin-top: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -100,7 +138,7 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header>   
 
     <section class="main">
         <div class="container">
@@ -115,7 +153,7 @@
                     </p>
                     <p>
                         <strong>Contact:</strong> Email: tianyuayan@gmail.com, Phone: +1 (332) 248-3991
-                    </p>    
+                    </p>
                 </div>
                 <div class="profile-photo">
                     <img src="profile_photo.jpeg" alt="Profile Photo" width="200" height="300" style="object-fit: cover; border-radius: 5px;">
@@ -123,21 +161,6 @@
             </div>
         </div>
     </section>
-    
-    <style>
-        .profile-container {
-            display: flex;
-        }
-    
-        .profile-text {
-            flex: 1;
-        }
-    
-        .profile-photo {
-            text-align: center;
-            padding-left: 2rem;
-        }
-    </style>    
 
     <footer>
         <p>Tianyu Yan &copy; 2023 | All rights reserved</p>
